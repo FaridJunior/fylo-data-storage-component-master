@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+:root {
+  /* Primary */
+  --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  /* Neutral */
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+div {
+  padding: 0;
+  margin: 0;
+}
+input,
+button {
+  outline: none;
+}
+body {
+  background: url("./images/bg-desktop.png") no-repeat 0px 24rem,
+    var(--very-dark-blue);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+.design {
+  position: absolute;
+  display: none;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0.1;
+  background-image: url("./design/desktop-design.jpg");
+}
+
+.container {
+  margin: 0px auto;
+  width: 80%;
+  padding-left: 8rem;
+}
+.s1 {
+  padding-top: 18rem;
+}
+.data__storage__wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.3rem;
+}
+
+.controllers__wrapper {
+  background-color: var(--dark-blue);
+  height: 12.5rem;
+  width: 22rem;
+  border-radius: 0.5rem 7rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-left: 2rem;
+}
+.controllers__container {
+  display: flex;
+  gap: 1.3rem;
+}
+.controllers__img__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--very-dark-blue);
+}
+.controllers__img__container img {
+  width: 1.4rem;
+}
+
+.state_wrapper {
+  background-color: var(--dark-blue);
+  color: var(--pale-blue);
+  border-radius: 0.5rem;
+  height: 9.5rem;
+  width: 34rem;
+  padding: 2.1rem 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.state_wrapper__subtitle {
+  font-size: 0.9rem;
+}
+
+.storage__progress {
+  position: relative;
+  padding: 1px;
+  height: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.progress {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1px;
+  border-radius: 1rem;
+  width: 76.5%;
+  height: 100%;
+  background-image: var(--gradient);
+}
+.progress .head {
+  display: block;
+  background-color: #fff;
+  width: 0.46rem;
+  height: 0.46rem;
+  border-radius: 50%;
+}
+
+.from__number,
+.to_number,
+.remain__number__container {
+  position: absolute;
+}
+.from__number,
+.to_number {
+  bottom: -20px;
+}
+.from__number {
+  left: 0px;
+}
+.to_number {
+  right: 0px;
+}
+.remain__number__container {
+  right: 0;
+  top: -7.7rem;
+  padding: 0.9rem 1.6rem;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  font-size: 1rem;
+  color: var(--grayish-blue);
+}
+.remain__number__container .number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+.remain__number__container::after {
+  content: "";
+  position: absolute;
+  height: 1.8rem;
+  width: 4rem;
+  bottom: -20px;
+  right: 0px;
+  clip-path: polygon(50% 0, 100% 100%, 100% 0);
+  background-color: #fff;
+}
+@media (max-width: 1027px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background: url("./images/bg-mobile.png") no-repeat, var(--very-dark-blue);
+  }
+  .container {
+    width: 95%;
+    padding-left: 0px;
+  }
+  .s1 {
+    padding-top: 8rem;
+  }
+  .data__storage__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .controllers__wrapper {
+    margin-left: 0px;
+  }
+  .state_wrapper,
+  .controllers__wrapper {
+    width: 22rem;
+  }
+  .remain__number__container {
+    right: 3.5rem;
+    top: 2.6rem;
+  }
+  .remain__number__container::after {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .state_wrapper,
+  .controllers__wrapper {
+    width: 20rem;
+  }
+  .remain__number__container {
+    right: 3rem;
+    top: 2.6rem;
+  }
+}

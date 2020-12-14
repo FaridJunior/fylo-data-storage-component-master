@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <style>
+      .attribution {
+        padding-top: 22rem;
+        font-size: 11px;
+        text-align: center;
+        color: #eee;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="design"></div>
+    <section class="s1">
+      <div class="container">
+        <div class="data__storage__wrapper">
+          <div class="controllers__wrapper">
+            <img src="./images/logo.svg" alt="" class="logo" />
+            <div class="controllers__container">
+              <div class="controllers__img__container">
+                <img src="./images/icon-document.svg" alt="" />
+              </div>
+              <div class="controllers__img__container">
+                <img src="./images/icon-folder.svg" alt="" />
+              </div>
+              <div class="controllers__img__container">
+                <img src="./images/icon-upload.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="state_wrapper">
+            <p class="state_wrapper__subtitle">
+              You’ve used <strong>815 GB </strong> of your storage
+            </p>
+            <div class="storage__progress">
+              <span class="progress"><span class="head"></span></span>
+              <span class="from__number">0 GB</span>
+              <span class="to_number">1000 GB</span>
+              <div class="remain__number__container">
+                <span class="number"> 185 </span> GB Left
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/mfarid_se">Mohamed Farid</a>.
+    </div>
+  </body>
+</html>
