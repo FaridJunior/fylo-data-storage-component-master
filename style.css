@@ -30,26 +30,12 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
-.design {
-  position: absolute;
-  display: none;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: 1000;
-  opacity: 0.1;
-  background-image: url("./design/desktop-design.jpg");
-}
-
 .container {
   margin: 0px auto;
   width: 80%;
   padding-left: 8rem;
 }
-.s1 {
+main {
   padding-top: 18rem;
 }
 .data__storage__wrapper {
@@ -57,7 +43,6 @@ body {
   align-items: flex-end;
   gap: 1.3rem;
 }
-
 .controllers__wrapper {
   background-color: var(--dark-blue);
   height: 12.5rem;
@@ -183,7 +168,7 @@ body {
     width: 95%;
     padding-left: 0px;
   }
-  .s1 {
+  main {
     padding-top: 8rem;
   }
   .data__storage__wrapper {
