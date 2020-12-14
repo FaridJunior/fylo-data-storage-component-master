@@ -1,4 +1,4 @@
-# Frontend Mentor - Fylo data storage component
+# Frontend Mentor - Fylo data storage component [preview](https://fylo-data-storage-component-master-gamma.vercel.app/)
 
 ![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)
 
